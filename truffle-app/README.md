@@ -9,7 +9,7 @@ Steps to run:
 5. Use truffle to compile and deploy in the blockchain network 
    1. Edit truffle-config.js as necessary
    2. Command `truffle compile`
-   3. Command `migrate --reset`
+   3. Command `truffle migrate --network rinkeby --reset`
 
 
 To check the deployed contract:
