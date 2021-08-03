@@ -44,13 +44,15 @@ function route() {
 
   router.post("/", async function (req, res, next) {
     const { issuerDID, schemaID, expiryDate, assuranceLevel } = req.body;
+    console.log(expiryDate);
+    console.log(Date.parse(expiryDate));
     let receipt = {};
     try {
       receipt = await trustRegistry.methods
         .grantAssurance(
           issuerDID,
           schemaID,
-          parseInt(expiryDate),
+          Date.parse(expiryDate),
           parseInt(assuranceLevel)
         )
         .send({ from: address });
