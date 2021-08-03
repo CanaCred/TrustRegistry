@@ -47,7 +47,12 @@ function route() {
     let receipt = {};
     try {
       receipt = await trustRegistry.methods
-        .grantAssurance(issuerDID, schemaID, expiryDate, assuranceLevel)
+        .grantAssurance(
+          issuerDID,
+          schemaID,
+          parseInt(expiryDate),
+          parseInt(assuranceLevel)
+        )
         .send({ from: address });
     } catch (err) {
       console.log(err);
