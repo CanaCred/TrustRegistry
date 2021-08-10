@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import GrantAssurance from "./components/GrantAssurance";
 import CheckAssurance from "./components/CheckAssurance";
 
-const domain = "http://15.222.7.146/:3001";
+const domain = "http://15.222.7.146:3001";
 
 const App = () => {
   return (
