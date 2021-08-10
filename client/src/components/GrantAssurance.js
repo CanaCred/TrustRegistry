@@ -7,13 +7,12 @@ import axios from "axios";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-const GrantAssurance = () => {
+const GrantAssurance = ({ domain }) => {
   const headingStyle = {
     color: "white",
     backgroundColor: "DodgerBlue",
     padding: "10px",
   };
-  const domain = "http://localhost:3001";
   const [issuerDID, setissuerDID] = useState();
   const [schemaID, setschemaID] = useState();
   const [expiryDate, setExpiryDate] = useState();
