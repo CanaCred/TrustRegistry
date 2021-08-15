@@ -6,11 +6,12 @@ Steps to run:
 2. Change directory to truffle-app (`cd ./truffle-app`)
 3. Install dependencies (`npm install`)
 4. Use truffle to compile and deploy in the blockchain network 
-   1. Edit truffle-config.js as necessary
-   2. Command `truffle compile`
-   3. Command `truffle migrate --network rinkeby --reset`
+* Edit truffle-config.js as necessary
+* Used the following in deploying to rinkeby test network
+** Command `truffle compile`
+** Command `truffle migrate --network rinkeby --reset`
 
 
-To check the deployed contract:
+Checking the deployed contract in rinkeby network:
 1. Go to blockchain explorer (i.e. https://rinkeby.etherscan.io/)
 2. Verify the deployed contract by entering the [smart contract address](https://github.com/CanaCred/TrustRegistry/blob/dd882f63fdf6c6c736cd9ab427f98611d588196a/truffle-app/build/contracts/TrustRegistry.json#L5818)
