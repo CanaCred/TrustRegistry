@@ -10,5 +10,8 @@ Steps to run:
 For testing:
 - Use Postman
   - Import [postman collection](https://github.com/CanaCred/TrustRegistry/blob/main/app/test/Trust%20Registry.postman_collection.json) and Run requests
-OR
+or
 - Use the Web interface
+  1. Change directory to client (`cd ../client`)
+  2. Install dependencies (`npm install`)
+  3. Run `npm start`   
