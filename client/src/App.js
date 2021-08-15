@@ -2,7 +2,15 @@ import Container from "react-bootstrap/Container";
 import GrantAssurance from "./components/GrantAssurance";
 import CheckAssurance from "./components/CheckAssurance";
 
-const domain = "http://15.222.7.146:3001";
+let domain;
+if (
+  process.env.NODE_ENV === "development" ||
+  process.env.NODE_ENV === "production"
+) {
+  domain = "http://15.222.7.146:3001";
+} else {
+  domain = "http://localhost:3001";
+}
 
 const App = () => {
   return (
