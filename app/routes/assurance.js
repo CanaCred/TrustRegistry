@@ -8,13 +8,13 @@ const TrustRegistry = require("../contracts/TrustRegistry.json");
 
 const address = process.env.ACCOUNT_ADDRESS;
 const privateKey = process.env.PRIVATE_KEY;
-const infuraUrl = `https://rinkeby.infura.io/v3/${process.env.INFURA_KEY}`;
+const besuUrl = process.env.BESU_URL;
 
 function route() {
   let trustRegistry;
   const init = async () => {
     try {
-      const provider = new Provider(privateKey, infuraUrl);
+      const provider = new Provider(privateKey, besuUrl);
       const web3 = new Web3(provider);
       const networkId = await web3.eth.net.getId();
       const deployedNetwork = TrustRegistry.networks[networkId];
