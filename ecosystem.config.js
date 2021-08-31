@@ -4,7 +4,7 @@ module.exports = {
       name: "api-server",
       cwd: `${__dirname}/app`,
       script: "./bin/www",
-      watch: ["./app"],
+      watch: true,
       env: {
         NODE_ENV: "development",
       },
@@ -16,7 +16,7 @@ module.exports = {
       name: "client-app",
       cwd: `${__dirname}/client`,
       script: "./node_modules/react-scripts/scripts/start.js",
-      watch: ["./client"],
+      watch: true,
       env: {
         NODE_ENV: "development",
       },
