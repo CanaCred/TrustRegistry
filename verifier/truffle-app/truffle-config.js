@@ -14,9 +14,9 @@ module.exports = {
   contracts_build_directory: path.join(__dirname, "build/contracts"),
   /* besu */
   networks: {
-    besu: {
+    besuWallet: {
       provider: () => provider,
-      network_id: "1337",
+      network_id: "*",
     },
   },
   /* rinkeby */
