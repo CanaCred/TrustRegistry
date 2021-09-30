@@ -31,15 +31,15 @@ function route() {
 
   router.get("/", async function (req, res, next) {
     const { issuerDID, schemaID } = req.query;
-    let data = {};
+    let assuranceLevel = {};
     try {
-      data = await trustRegistry.methods
+      assuranceLevel = await trustRegistry.methods
         .checkAssurance(issuerDID, schemaID)
         .call();
     } catch (err) {
       console.log(err);
     }
-    res.json(data);
+    res.json(assuranceLevel);
   });
 
   router.post("/", async function (req, res, next) {
