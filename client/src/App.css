@@ -1,0 +1,21 @@
+/* Inactive tab */
+.nav-item.nav-link {
+  background-color: rgb(247, 229, 229);
+  font-size: large;
+  color: #d9534f;
+}
+.nav > a:hover {
+  background-color: pink;
+}
+
+/* Active tab */
+.nav-item.nav-link.active {
+  background-color: #d9534f;
+  color: white;
+}
+
+/* Disabled tab */
+.nav-item.nav-link.disabled {
+  background-color: lightgray;
+  color: darkgray;
+}

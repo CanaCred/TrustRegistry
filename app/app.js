@@ -6,6 +6,7 @@ const cookieParser = require("cookie-parser");
 const logger = require("morgan");
 
 const assuranceRouter = require("./routes/assurance");
+const credentialRouter = require("./routes/credential");
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.get("/", function (req, res) {
   res.send("Welcome to Trust Registry");
 });
 app.use("/assurance", assuranceRouter);
+app.use("/credential", credentialRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
