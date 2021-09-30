@@ -7,7 +7,7 @@ import Form from "react-bootstrap/Form";
 const CheckAssurance = ({ domain }) => {
   const headingStyle = {
     color: "white",
-    backgroundColor: "DodgerBlue",
+    backgroundColor: "#d1534f",
     padding: "10px",
   };
   const [issuerDID, setissuerDID] = useState();
@@ -48,7 +48,7 @@ const CheckAssurance = ({ domain }) => {
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formAssuranceLevel">
-        <Button variant="outline-primary" onClick={checkAssurance}>
+        <Button variant="outline-danger" onClick={checkAssurance}>
           Submit
         </Button>{" "}
       </Form.Group>

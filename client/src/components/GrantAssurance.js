@@ -10,7 +10,7 @@ import Form from "react-bootstrap/Form";
 const GrantAssurance = ({ domain }) => {
   const headingStyle = {
     color: "white",
-    backgroundColor: "DodgerBlue",
+    backgroundColor: "#d1534f",
     padding: "10px",
   };
   const [issuerDID, setissuerDID] = useState();
@@ -80,7 +80,7 @@ const GrantAssurance = ({ domain }) => {
         />
       </Form.Group>
       <Form.Group className="mb-3" controlId="buttons">
-        <Button variant="outline-primary" onClick={grantAssurance}>
+        <Button variant="outline-danger" onClick={grantAssurance}>
           Submit
         </Button>{" "}
       </Form.Group>
