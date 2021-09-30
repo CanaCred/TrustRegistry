@@ -1,3 +1,4 @@
+require("dotenv").config();
 const path = require("path");
 const Provider = require("@truffle/hdwallet-provider");
 /* besu */
