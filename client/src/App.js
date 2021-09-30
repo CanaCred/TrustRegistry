@@ -11,9 +11,9 @@ let domain;
 //   process.env.NODE_ENV === "development" ||
 //   process.env.NODE_ENV === "production"
 // ) {
-//   domain = "http://15.222.7.146:3001";
+domain = "http://15.222.7.146:3001";
 // } else {
-domain = "http://localhost:3001";
+// domain = "http://localhost:3001";
 // }
 
 const App = () => {
