@@ -5815,12 +5815,12 @@
     "1337": {
       "events": {},
       "links": {},
-      "address": "0xf90E97357b8dF646389519112F2fdeE1f8A09bd0",
-      "transactionHash": "0xb34c54d23a3f137b2993fcbd9d785722035fc9ae0d667beaf5f4831a52cf0bb4"
+      "address": "0xc0ED63E3A70BfCB003452B1Cc083db822e1f23e1",
+      "transactionHash": "0xdb2470c01734528174e782f8296222a75c2e506d047e60bd4416535ef443a65b"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-10-07T00:07:05.021Z",
+  "updatedAt": "2021-10-21T01:13:52.964Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
