@@ -7,14 +7,7 @@ import GrantCredential from "./components/GrantCredential";
 import CheckCredential from "./components/CheckCredential";
 
 let domain;
-// if (
-//   process.env.NODE_ENV === "development" ||
-//   process.env.NODE_ENV === "production"
-// ) {
-domain = process.env.DOMAIN;
-// } else {
-// domain = "http://localhost:3001";
-// }
+domain = process.env.REACT_APP_DOMAIN;
 
 const App = () => {
   return (
