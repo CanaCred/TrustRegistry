@@ -11,7 +11,7 @@ let domain;
 //   process.env.NODE_ENV === "development" ||
 //   process.env.NODE_ENV === "production"
 // ) {
-domain = "http://15.222.7.146:3001";
+domain = process.env.DOMAIN;
 // } else {
 // domain = "http://localhost:3001";
 // }
